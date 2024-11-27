@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import DesktopNavbar from './DesktopNav'
-import { Button } from './ui/button'
+import { Button } from '../ui/button'
 import MobileNavbar from './MobileNav'
 
 const Header = () => {

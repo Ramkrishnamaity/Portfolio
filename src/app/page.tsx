@@ -1,14 +1,14 @@
-import PhotoFrame from "@/components/PhotoFrame"
-import SocialLinks from "@/components/SocialLinks"
+import PhotoFrame from "@/components/home/PhotoFrame"
+import SocialLinks from "@/components/home/SocialLinks"
+import Status from "@/components/home/Status"
 import { Button } from "@/components/ui/button"
-import React from "react"
 import { FiDownload } from "react-icons/fi"
 
 const Home: React.FC = () => {
 
   return (
     <section className="w-full">
-      <div className="container max-auto h-full">
+      <div className="container mx-auto h-full">
         <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
 
           {/* text part */}
@@ -34,7 +34,7 @@ const Home: React.FC = () => {
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 lg:mb-0">
-                <SocialLinks containerStyle="flex gap-6" iconStyle="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:trasition-all duration-500"/>
+                <SocialLinks containerStyle="flex gap-6" iconStyle="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:trasition-all duration-500" />
               </div>
             </div>
 
@@ -44,8 +44,11 @@ const Home: React.FC = () => {
           <div className="order-1 lg:order-none mb-8 lg:mb-0">
             <PhotoFrame />
           </div>
+
         </div>
       </div>
+      {/* status */}
+      <Status />
     </section>
   )
 }

@@ -4,8 +4,8 @@ import React from 'react'
 import { CiMenuFries } from "react-icons/ci"
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
-import { Button } from './ui/button'
+import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet'
+import { Button } from '../ui/button'
 import { DialogTitle } from '@radix-ui/react-dialog'
 
 
@@ -18,13 +18,13 @@ const links = [
         name: "about",
         path: "/about"
     },
+    // {
+    //     name: "services",
+    //     path: "/services"
+    // },
     {
         name: "projects",
         path: "/projects"
-    },
-    {
-        name: "services",
-        path: "/services"
     },
     {
         name: "contact",
@@ -38,7 +38,7 @@ const MobileNavbar: React.FC = () => {
     const pathName = usePathname()
 
     return <Sheet>
-        <DialogTitle className='hidden' />   
+        <DialogTitle className='hidden' />
         <SheetTrigger className='flex justify-center items-center'>
             <CiMenuFries className='text-[25px] sm:text-[32px] text-accent' />
         </SheetTrigger>
@@ -69,6 +69,13 @@ const MobileNavbar: React.FC = () => {
                     })
                 }
             </nav>
+
+            {/* hire me btn */}
+            <div className='mx-auto m-5'>
+                <Link href="/contact">
+                    <Button>Hire me</Button>
+                </Link>
+            </div>
 
         </SheetContent>
     </Sheet>

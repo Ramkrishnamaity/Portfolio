@@ -41,6 +41,7 @@
     background-size: contain;
     animation: profile-anime 8s ease-in-out infinite 1.5s;
   }
+  
   .photo-frame-container {
     animation: scaleP 1.2s ease-in-out;
   }
