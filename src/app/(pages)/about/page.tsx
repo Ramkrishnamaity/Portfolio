@@ -177,7 +177,7 @@ const AboutPage = () => {
           className='flex flex-col lg:flex-row lg:gap-[60px]'
         >
           <TabsList className='flex flex-col h-[400px] justify-center w-full max-w-[380px] mx-auto lg:mx-0 gap-6'>
-            <TabsTrigger value='experience'>Experience</TabsTrigger>
+            <TabsTrigger defaultChecked value='experience'>Experience</TabsTrigger>
             <TabsTrigger value='education'>Education</TabsTrigger>
             <TabsTrigger value='skills'>Skills</TabsTrigger>
             <TabsTrigger value='about'>About me</TabsTrigger>
