@@ -1,7 +1,7 @@
 
-import React from "react"
-import Link from "next/link"
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
+import React from "react";
+import Link from "next/link";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 interface PropsType {
     containerStyle: string
@@ -11,17 +11,17 @@ interface PropsType {
 const social_links = [
     {
         icon: <FaGithub />,
-        url: 'https://github.com/Ramkrishnamaity/'
+        url: "https://github.com/Ramkrishnamaity/"
     },
     {
         icon: <FaLinkedin />,
-        url: 'https://www.linkedin.com/in/ramkrishna-maity/'
+        url: "https://www.linkedin.com/in/ramkrishna-maity/"
     },
     {
         icon: <FaTwitter />,
-        url: 'https://x.com/_ramkrishna02'
+        url: "https://x.com/_ramkrishna02"
     }
-]
+];
 
 const SocialLinks: React.FC<PropsType> = ({containerStyle, iconStyle}) => {
     return (
@@ -30,11 +30,11 @@ const SocialLinks: React.FC<PropsType> = ({containerStyle, iconStyle}) => {
                 social_links.map((item, index) => {
                     return <Link href={item.url} key={index} className={iconStyle} passHref>
                         {item.icon}
-                    </Link>
+                    </Link>;
                 })
             }
         </div>
-    )
-}
+    );
+};
 
-export default SocialLinks
+export default SocialLinks;

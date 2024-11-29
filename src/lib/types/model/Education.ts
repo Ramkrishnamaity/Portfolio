@@ -1,5 +1,4 @@
-import { Types } from "mongoose"
-
+import { Types } from "mongoose";
 
 export type EducationModelType<T> = T & {
     userId: Types.ObjectId

@@ -1,13 +1,12 @@
-"use client"
+"use client";
 
-import React from 'react'
-import { CiMenuFries } from "react-icons/ci"
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet'
-import { Button } from '../ui/button'
-import { DialogTitle } from '@radix-ui/react-dialog'
-
+import React from "react";
+import { CiMenuFries } from "react-icons/ci";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import { Button } from "../ui/button";
+import { DialogTitle } from "@radix-ui/react-dialog";
 
 const links = [
     {
@@ -30,12 +29,11 @@ const links = [
         name: "contact",
         path: "/contact"
     },
-]
-
+];
 
 const MobileNavbar: React.FC = () => {
 
-    const pathName = usePathname()
+    const pathName = usePathname();
 
     return <Sheet>
         <DialogTitle className='hidden' />
@@ -65,7 +63,7 @@ const MobileNavbar: React.FC = () => {
                             >
                                 {link.name}
                             </Link>
-                        )
+                        );
                     })
                 }
             </nav>
@@ -78,7 +76,7 @@ const MobileNavbar: React.FC = () => {
             </div>
 
         </SheetContent>
-    </Sheet>
-}
+    </Sheet>;
+};
 
-export default MobileNavbar
+export default MobileNavbar;

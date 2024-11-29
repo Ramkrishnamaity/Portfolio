@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import React from 'react'
-import DesktopNavbar from './DesktopNav'
-import { Button } from '../ui/button'
-import MobileNavbar from './MobileNav'
+import Link from "next/link";
+import React from "react";
+import DesktopNavbar from "./DesktopNav";
+import { Button } from "../ui/button";
+import MobileNavbar from "./MobileNav";
 
 const Header = () => {
     return (
@@ -32,7 +32,7 @@ const Header = () => {
 
             </div>
         </header>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;

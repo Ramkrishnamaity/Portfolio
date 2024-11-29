@@ -1,27 +1,25 @@
-"use client"
+"use client";
 
-import CountUp from "react-countup"
-
+import CountUp from "react-countup";
 
 const stats = [
     {
         value: 2,
-        text: 'Years of experience'
+        text: "Years of experience"
     },
     {
         value: 27,
-        text: 'Projects completed'
+        text: "Projects completed"
     },
     {
         value: 8,
-        text: 'Technologies mastered'
+        text: "Technologies mastered"
     },
     {
         value: 721,
-        text: 'Code commits'
+        text: "Code commits"
     }
-]
-
+];
 
 const Status = () => {
     return (
@@ -46,13 +44,13 @@ const Status = () => {
                                         {item.text}
                                     </p>
                                 </div>
-                            )
+                            );
                         })
                     }
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Status
+export default Status;

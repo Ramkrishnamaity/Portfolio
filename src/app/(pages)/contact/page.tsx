@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { FaEnvelope, FaMapMarkedAlt, FaPhoneAlt } from "react-icons/fa"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { FaEnvelope, FaMapMarkedAlt, FaPhoneAlt } from "react-icons/fa";
 
 const info = [
   {
@@ -21,7 +21,7 @@ const info = [
     title: "Address",
     desc: "Saltlake, Kolkata, West Bengal, India"
   }
-]
+];
 
 const ContactPage = () => {
   return (
@@ -65,7 +65,7 @@ const ContactPage = () => {
                       <p className="text-white/60">{item.title}</p>
                       <h3 className="sm:text-xl text-base break-all">{item.desc}</h3>
                     </div>
-                  </li>
+                  </li>;
                 })
               }
             </ul>
@@ -74,7 +74,7 @@ const ContactPage = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ContactPage
+export default ContactPage;

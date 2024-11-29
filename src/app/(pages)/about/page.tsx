@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { ScrollArea } from '@/components/ui/scroll-area'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import {
   FaHtml5,
   FaCss3,
@@ -10,11 +10,11 @@ import {
   FaReact,
   FaJava,
   FaNodeJs
-} from 'react-icons/fa'
+} from "react-icons/fa";
 
 import {
   BsGithub
-} from "react-icons/bs"
+} from "react-icons/bs";
 
 import {
   SiTailwindcss, 
@@ -24,137 +24,137 @@ import {
   SiMongodb, 
   SiTypescript,
   SiExpress
-} from 'react-icons/si'
+} from "react-icons/si";
 
 const about = {
-  title: 'About me',
+  title: "About me",
   desc: "A Passionate Full stack developer skilled in ReactJs, NodeJs, NextJs, Non Relational and Relational Databases. Apart from Web Technologies, i am doing programming in different languages like C, Java, Python etc",
   info: [
     {
-      fieldName: 'Name',
-      fieldValue: 'Ramkrishna Maity',
+      fieldName: "Name",
+      fieldValue: "Ramkrishna Maity",
     },
     {
-      fieldName: 'Email',
-      fieldValue: 'ramkrishnamaity4146@gmail.com',
+      fieldName: "Email",
+      fieldValue: "ramkrishnamaity4146@gmail.com",
     },
     {
-      fieldName: 'Phone',
-      fieldValue: '+91 9832804146',
+      fieldName: "Phone",
+      fieldValue: "+91 9832804146",
     },
     {
-      fieldName: 'Experience',
-      fieldValue: '2+ Years',
+      fieldName: "Experience",
+      fieldValue: "2+ Years",
     },
     {
-      fieldName: 'Nationality',
-      fieldValue: 'Indian',
+      fieldName: "Nationality",
+      fieldValue: "Indian",
     },
     {
-      fieldName: 'Languages',
-      fieldValue: 'English, Bengali',
+      fieldName: "Languages",
+      fieldValue: "English, Bengali",
     },
     {
-      fieldName: 'Address',
-      fieldValue: 'Saltlake, Kolkata, West Bengal, India',
+      fieldName: "Address",
+      fieldValue: "Saltlake, Kolkata, West Bengal, India",
     }
   ]
-}
+};
 
 const experience = [
   {
-    company: 'Webhibe Technologies.',
+    company: "Webhibe Technologies.",
     position: "Jr MERN Stack Developer",
     duration: "Janury 2024 - Present"
   },
   {
-    company: 'Tech Solutions Inc.',
+    company: "Tech Solutions Inc.",
     position: "Full Stack Developer",
     duration: "2022 - Present"
   },
   {
-    company: 'Tech Solutions Inc.',
+    company: "Tech Solutions Inc.",
     position: "Full Stack Developer",
     duration: "2022 - Present"
   }
-]
+];
 
 const education = [
   {
-    institute: 'GMIT',
+    institute: "GMIT",
     degree: "Bachelor in Technology",
     duration: "2020 - 2024"
   },
   {
-    institute: 'Sevayatan Vidyalaya',
+    institute: "Sevayatan Vidyalaya",
     degree: "Higher Secondary Education",
     duration: "2018 - 2020"
   },
   {
-    institute: 'Chichra High School',
+    institute: "Chichra High School",
     degree: "Secondary Education",
     duration: "2013 - 2018"
   }
-]
+];
 
 const skills = [
   {
     icon: <FaReact />,
-    name: 'ReactJs'
+    name: "ReactJs"
   },
   {
     icon: <FaNodeJs />,
-    name: 'NodeJs'
+    name: "NodeJs"
   },
   {
     icon: <SiExpress />,
-    name: 'ExpressJs'
+    name: "ExpressJs"
   },
   {
     icon: <SiNextdotjs />,
-    name: 'NextJs'
+    name: "NextJs"
   },
   {
     icon: <SiMongodb />,
-    name: 'MongoDB'
+    name: "MongoDB"
   },
   {
     icon: <SiPostgresql />,
-    name: 'Postgres'
+    name: "Postgres"
   },
   {
     icon: <FaJs />,
-    name: 'JavaScript'
+    name: "JavaScript"
   },
   {
     icon: <SiTypescript />,
-    name: 'TypeScript'
+    name: "TypeScript"
   },
   {
     icon: <FaJava />,
-    name: 'Java'
+    name: "Java"
   },
   {
     icon: <FaHtml5 />,
-    name: 'Html 5'
+    name: "Html 5"
   },
   {
     icon: <FaCss3 />,
-    name: 'Css 3'
+    name: "Css 3"
   },
   {
     icon: <SiTailwindcss />,
-    name: 'Tailwind'
+    name: "Tailwind"
   },
   {
     icon: <BsGithub />,
-    name: 'Git'
+    name: "Git"
   },
   {
     icon: <SiPostman />,
-    name: 'Postman'
+    name: "Postman"
   }
-]
+];
 
 const AboutPage = () => {
   return (
@@ -187,7 +187,7 @@ const AboutPage = () => {
                           <span className='w-[6px] h-[6px] rounded-full bg-accent'></span>
                           <p className='text-white/80'>{item.company}</p>
                         </div>
-                      </li>
+                      </li>;
                     })
                   }
                 </ul>
@@ -207,7 +207,7 @@ const AboutPage = () => {
                           <span className='w-[6px] h-[6px] rounded-full bg-accent'></span>
                           <p className='text-white/80'>{item.institute}</p>
                         </div>
-                      </li>
+                      </li>;
                     })
                   }
                 </ul>
@@ -233,7 +233,7 @@ const AboutPage = () => {
                             </TooltipContent>
                           </Tooltip>
                         </TooltipProvider>
-                      </li>
+                      </li>;
                     })
                   }
                 </ul>
@@ -247,10 +247,10 @@ const AboutPage = () => {
                 <ul className='grid grid-cols-1 lg:grid-cols-2 gap-y-6 max-w-[620px] mx-auto lg:mx-0'>
                   {
                     about.info.map((item, index) => {
-                      return <li key={index} className={`${index === about.info.length - 1 && 'lg:col-span-2'} flex items-center justify-center lg:justify-start xs:gap-4 gap-2`}>
+                      return <li key={index} className={`${index === about.info.length - 1 && "lg:col-span-2"} flex items-center justify-center lg:justify-start xs:gap-4 gap-2`}>
                         <span className='xs:text-base text-sm'>{item.fieldName}</span>
                         <span className='text-white/60 xs:text-base text-sm'>{item.fieldValue}</span>
-                      </li>
+                      </li>;
                     })
                   }
                 </ul>
@@ -261,7 +261,7 @@ const AboutPage = () => {
         </Tabs>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;

@@ -1,6 +1,6 @@
-import { CommonModelType } from "@/lib/types/common"
-import { ProfileModelType } from "@/lib/types/model/Profile"
-import mongoose, { Document, Schema } from "mongoose"
+import { CommonModelType } from "@/lib/types/common";
+import { ProfileModelType } from "@/lib/types/model/Profile";
+import mongoose, { Document, Schema } from "mongoose";
 
 const ProfileSchema = new Schema<ProfileModelType<CommonModelType & Document["_id"]>>({
 	mailId: {
@@ -55,9 +55,8 @@ const ProfileSchema = new Schema<ProfileModelType<CommonModelType & Document["_i
 		type: Boolean,
 		default: false
 	}
-})
+});
 
+const ProfileModel = mongoose.models.Profile || mongoose.model<ProfileModelType<CommonModelType & Document["_id"]>>("Profile", ProfileSchema);
 
-const ProfileModel = mongoose.models.Profile || mongoose.model<ProfileModelType<CommonModelType & Document["_id"]>>("Profile", ProfileSchema)
-
-export default ProfileModel
+export default ProfileModel;

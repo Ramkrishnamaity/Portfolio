@@ -1,5 +1,4 @@
 
-
 export type ProfileModelType<T> = T & {
     mailId: string
     name: string

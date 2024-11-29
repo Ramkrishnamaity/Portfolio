@@ -1,8 +1,10 @@
-import PhotoFrame from "@/components/home/PhotoFrame"
-import SocialLinks from "@/components/home/SocialLinks"
-import Status from "@/components/home/Status"
-import { Button } from "@/components/ui/button"
-import { FiDownload } from "react-icons/fi"
+
+import React from "react";
+import PhotoFrame from "@/components/home/PhotoFrame";
+import SocialLinks from "@/components/home/SocialLinks";
+import Status from "@/components/home/Status";
+import { Button } from "@/components/ui/button";
+import { FiDownload } from "react-icons/fi";
 
 const Home: React.FC = () => {
 
@@ -58,7 +60,7 @@ const Home: React.FC = () => {
       {/* status */}
       <Status />
     </section>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

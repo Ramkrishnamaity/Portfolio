@@ -1,5 +1,4 @@
-import { ReactNode } from "react"
-
+import { ReactNode } from "react";
 
 export type CommonPropsType = {
     children: ReactNode

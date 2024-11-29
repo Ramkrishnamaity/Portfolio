@@ -1,62 +1,62 @@
-"use client"
+"use client";
 
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 import {
   BsArrowUpRight,
   BsGithub
-} from "react-icons/bs"
+} from "react-icons/bs";
 
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger
-} from "@/components/ui/tooltip"
-import { useState } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import WorkSliderBtns from '@/components/project/WorkSliderBtns'
+} from "@/components/ui/tooltip";
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import WorkSliderBtns from "@/components/project/WorkSliderBtns";
 
 const projects = [
   {
-    no: '01',
-    projectName: 'Chat Application',
+    no: "01",
+    projectName: "Chat Application",
     projectDesc: "A Real Time Chat Application (Fully Responsive) with audio call, video call and status share facilities.",
     techs: ["ReactJs", "NodeJs", "PeerJs", "Socket.io"],
-    image: '/assets/projects/chatapp.png',
+    image: "/assets/projects/chatapp.png",
     repoUrl: "/",
     liveUrl: "/"
   },
   {
-    no: '02',
-    projectName: 'Portfolio Website',
+    no: "02",
+    projectName: "Portfolio Website",
     projectDesc: "This is my Personal Portfolio (Fully Responsive) where you are currently exploring my work and achievements",
     techs: ["NextJs", "Shadcn UI", "Tailwind CSS"],
-    image: '/assets/portfolio.png',
+    image: "/assets/portfolio.png",
     repoUrl: "https://github.com/Ramkrishnamaity/rhythmchat-app-server",
     liveUrl: "https://github.com/Ramkrishnamaity/rhythmchat-app-server"
   },
   {
-    no: '03',
-    projectName: 'NPM Starter Package',
+    no: "03",
+    projectName: "NPM Starter Package",
     projectDesc: "This plugin provides ReactJs, NodeJs, NextJS project template in both JavaScript And TypeScript language that contain a very useful file structure with impotant configurations.",
     techs: ["NodeJs", "NPM"],
-    image: '/assets/portfolio.png',
+    image: "/assets/portfolio.png",
     repoUrl: "https://github.com/Ramkrishnamaity/web-starter-kit",
     liveUrl: "https://github.com/Ramkrishnamaity/web-starter-kit"
   }
-]
+];
 
 const ProjectsPage = () => {
 
-  const [project, setProject] = useState(projects[0])
+  const [project, setProject] = useState(projects[0]);
 
   function handleSlideChange(swiper: { activeIndex: any }) {
-    const currentIndex = swiper.activeIndex
+    const currentIndex = swiper.activeIndex;
 
-    setProject(projects[currentIndex])
+    setProject(projects[currentIndex]);
   }
 
   return (
@@ -83,7 +83,7 @@ const ProjectsPage = () => {
                   return <li key={index} className='text-xl text-accent'>
                     {item}
                     {index !== project.techs.length - 1 && ","}
-                  </li>
+                  </li>;
                 })
               }
             </ul>
@@ -118,7 +118,6 @@ const ProjectsPage = () => {
               </Link>
             </div>
 
-
           </div>
         </div>
         <div className='w-full lg:w-[50%]'>
@@ -138,7 +137,7 @@ const ProjectsPage = () => {
                       <Image src={project.image} fill className='object-cover' alt='Project Image' />
                     </div>
                   </div>
-                </SwiperSlide>
+                </SwiperSlide>;
               })
             }
             {/* Slider Buttons */}
@@ -148,11 +147,10 @@ const ProjectsPage = () => {
             />
           </Swiper>
 
-
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectsPage
+export default ProjectsPage;

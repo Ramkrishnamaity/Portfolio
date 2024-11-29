@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import React from 'react'
-
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React from "react";
 
 const links = [
     {
@@ -26,12 +25,11 @@ const links = [
         name: "contact",
         path: "/contact"
     },
-]
-
+];
 
 const DesktopNavbar: React.FC = () => {
 
-    const pathName = usePathname()
+    const pathName = usePathname();
 
     return (
         <nav className='flex lg:gap-8 gap-6'>
@@ -46,12 +44,12 @@ const DesktopNavbar: React.FC = () => {
                         >
                             {link.name}
                         </Link>
-                    )
+                    );
                 })
             }
 
         </nav>
-    )
-}
+    );
+};
 
-export default DesktopNavbar
+export default DesktopNavbar;
