@@ -2,20 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  body {
+    @apply font-primary bg-primary text-white leading-loose;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .h1 {
+    @apply text-[35px] sm:text-[48px] lg:text-[50px] leading-[1.1] font-semibold
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-} */
+  @keyframes scaleP{
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+  }
+
+  @keyframes profile-anime{
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+  }
+
+  .photo-frame {
+    background-image: url(/assets/home/profile.png);
+    box-shadow: inset 0 0 10px 2px #00ff99, 0 0 10px 0px #081b29;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: profile-anime 8s ease-in-out infinite 1.5s;
+  }
+  
+  .photo-frame-container {
+    animation: scaleP 1.2s ease-in-out;
+  }
+

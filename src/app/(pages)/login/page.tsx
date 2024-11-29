@@ -1,14 +1,13 @@
 
-import { signIn } from "@/auth"
-import React from 'react'
+import { signIn } from "@/auth";
+import React from "react";
 import { FcGoogle } from "react-icons/fc";
-
 
 const Login = () => {
 
   async function SignIn() {
-    "use server"
-    await signIn("google")
+    "use server";
+    await signIn("google");
   }
 
   return (
@@ -21,7 +20,7 @@ const Login = () => {
         <span><FcGoogle size={25} /></span> Log in with Google
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

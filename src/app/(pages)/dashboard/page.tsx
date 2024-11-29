@@ -1,12 +1,11 @@
-"use client"
+"use client";
 
-import { useRouter } from 'next/navigation'
-import React from 'react'
-import { toast } from 'react-toastify'
+// import { useRouter } from "next/navigation";
+import React from "react";
 
 const Dashboard = () => {
 
-  const router = useRouter()
+  // const router = useRouter();
 
   // async function logoutHandler() {
   //   try {
@@ -25,7 +24,7 @@ const Dashboard = () => {
        <p>Dashboard</p>
        <button >Logout</button>
     </div>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;
