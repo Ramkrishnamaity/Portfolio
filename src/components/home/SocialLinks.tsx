@@ -11,15 +11,15 @@ interface PropsType {
 const social_links = [
     {
         icon: <FaGithub />,
-        url: ''
+        url: 'https://github.com/Ramkrishnamaity/'
     },
     {
         icon: <FaLinkedin />,
-        url: ''
+        url: 'https://www.linkedin.com/in/ramkrishna-maity/'
     },
     {
         icon: <FaTwitter />,
-        url: ''
+        url: 'https://x.com/_ramkrishna02'
     }
 ]
 
@@ -28,7 +28,7 @@ const SocialLinks: React.FC<PropsType> = ({containerStyle, iconStyle}) => {
         <div className={containerStyle}>
             {
                 social_links.map((item, index) => {
-                    return <Link href={item.url} key={index} className={iconStyle}>
+                    return <Link href={item.url} key={index} className={iconStyle} passHref>
                         {item.icon}
                     </Link>
                 })

@@ -3,15 +3,6 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue
-} from "@/components/ui/select"
 import { FaEnvelope, FaMapMarkedAlt, FaPhoneAlt } from "react-icons/fa"
 
 const info = [
@@ -34,18 +25,15 @@ const info = [
 
 const ContactPage = () => {
   return (
-    <section className="py-6">
+    <section className="py-2 md:pb-4">
       <div className="container mx-auto">
 
         <div className="flex flex-col lg:flex-row gap-[30px]">
 
           {/* form */}
           <div className="lg:w-[54%] order-2 lg:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form className="flex flex-col gap-5 p-5 sm:p-10 bg-[#27272c] rounded-xl">
               <h3>Let's work together</h3>
-              <p className="text-white/60">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae eum necessitatibus doloremque obcaecati praesentium labore?
-              </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input type="firstName" placeholder="First Name" />
                 <Input type="lastName" placeholder="Last Name" />
@@ -65,7 +53,7 @@ const ContactPage = () => {
           </div>
 
           {/* info */}
-          <div className="flex-1 flex items-center lg:justify-end order-1 lg:order-none mb-8 lg:mb-0">
+          <div className="flex-1 flex items-center lg:justify-end order-1 lg:order-none">
             <ul className="flex flex-col gap-10">
               {
                 info.map((item, index)=> {

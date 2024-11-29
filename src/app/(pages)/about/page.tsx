@@ -8,24 +8,34 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaFigma,
+  FaJava,
   FaNodeJs
 } from 'react-icons/fa'
 
 import {
-  SiTailwindcss, SiNextdotjs
+  BsGithub
+} from "react-icons/bs"
+
+import {
+  SiTailwindcss, 
+  SiNextdotjs, 
+  SiPostman, 
+  SiPostgresql, 
+  SiMongodb, 
+  SiTypescript,
+  SiExpress
 } from 'react-icons/si'
 
 const about = {
   title: 'About me',
-  desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti eveniet eaque id. Perspiciatis obcaecati totam quia blanditiis possimus atque numquam!",
+  desc: "A Passionate Full stack developer skilled in ReactJs, NodeJs, NextJs, Non Relational and Relational Databases. Apart from Web Technologies, i am doing programming in different languages like C, Java, Python etc",
   info: [
     {
       fieldName: 'Name',
       fieldValue: 'Ramkrishna Maity',
     },
     {
-      fieldName: 'MailId',
+      fieldName: 'Email',
       fieldValue: 'ramkrishnamaity4146@gmail.com',
     },
     {
@@ -46,31 +56,16 @@ const about = {
     },
     {
       fieldName: 'Address',
-      fieldValue: 'West Bengal, India',
+      fieldValue: 'Saltlake, Kolkata, West Bengal, India',
     }
   ]
 }
 
 const experience = [
   {
-    company: 'Tech Solutions Inc.',
-    position: "Full Stack Developer",
-    duration: "2022 - Present"
-  },
-  {
-    company: 'Tech Solutions Inc.',
-    position: "Full Stack Developer",
-    duration: "2022 - Present"
-  },
-  {
-    company: 'Tech Solutions Inc.',
-    position: "Full Stack Developer",
-    duration: "2022 - Present"
-  },
-  {
-    company: 'Tech Solutions Inc.',
-    position: "Full Stack Developer",
-    duration: "2022 - Present"
+    company: 'Webhibe Technologies.',
+    position: "Jr MERN Stack Developer",
+    duration: "Janury 2024 - Present"
   },
   {
     company: 'Tech Solutions Inc.',
@@ -86,38 +81,59 @@ const experience = [
 
 const education = [
   {
-    institute: 'Tech Solutions Inc.',
-    degree: "Full Stack Developer",
-    duration: "2022 - Present"
+    institute: 'GMIT',
+    degree: "Bachelor in Technology",
+    duration: "2020 - 2024"
   },
   {
-    institute: 'Tech Solutions Inc.',
-    degree: "Full Stack Developer",
-    duration: "2022 - Present"
+    institute: 'Sevayatan Vidyalaya',
+    degree: "Higher Secondary Education",
+    duration: "2018 - 2020"
   },
   {
-    institute: 'Tech Solutions Inc.',
-    degree: "Full Stack Developer",
-    duration: "2022 - Present"
-  },
-  {
-    institute: 'Tech Solutions Inc.',
-    degree: "Full Stack Developer",
-    duration: "2022 - Present"
-  },
-  {
-    institute: 'Tech Solutions Inc.',
-    degree: "Full Stack Developer",
-    duration: "2022 - Present"
-  },
-  {
-    institute: 'Tech Solutions Inc.',
-    degree: "Full Stack Developer",
-    duration: "2022 - Present"
+    institute: 'Chichra High School',
+    degree: "Secondary Education",
+    duration: "2013 - 2018"
   }
 ]
 
 const skills = [
+  {
+    icon: <FaReact />,
+    name: 'ReactJs'
+  },
+  {
+    icon: <FaNodeJs />,
+    name: 'NodeJs'
+  },
+  {
+    icon: <SiExpress />,
+    name: 'ExpressJs'
+  },
+  {
+    icon: <SiNextdotjs />,
+    name: 'NextJs'
+  },
+  {
+    icon: <SiMongodb />,
+    name: 'MongoDB'
+  },
+  {
+    icon: <SiPostgresql />,
+    name: 'Postgres'
+  },
+  {
+    icon: <FaJs />,
+    name: 'JavaScript'
+  },
+  {
+    icon: <SiTypescript />,
+    name: 'TypeScript'
+  },
+  {
+    icon: <FaJava />,
+    name: 'Java'
+  },
   {
     icon: <FaHtml5 />,
     name: 'Html 5'
@@ -127,44 +143,16 @@ const skills = [
     name: 'Css 3'
   },
   {
-    icon: <FaJs />,
-    name: 'Js'
-  },
-  {
-    icon: <FaReact />,
-    name: 'React'
-  },
-  {
-    icon: <FaNodeJs />,
-    name: 'Node'
-  },
-  {
-    icon: <SiNextdotjs />,
-    name: 'Next'
-  },
-  {
-    icon: <FaFigma />,
-    name: 'Figma'
-  },
-  {
     icon: <SiTailwindcss />,
     name: 'Tailwind'
   },
   {
-    icon: <FaNodeJs />,
-    name: 'Node'
+    icon: <BsGithub />,
+    name: 'Git'
   },
   {
-    icon: <SiNextdotjs />,
-    name: 'Next'
-  },
-  {
-    icon: <FaFigma />,
-    name: 'Figma'
-  },
-  {
-    icon: <SiTailwindcss />,
-    name: 'Tailwind'
+    icon: <SiPostman />,
+    name: 'Postman'
   }
 ]
 
@@ -174,9 +162,9 @@ const AboutPage = () => {
       <div className="container mx-auto">
         <Tabs
           defaultValue='experience'
-          className='flex flex-col lg:flex-row lg:gap-[60px]'
+          className='flex flex-col lg:flex-row gap-[30px] lg:gap-[60px]'
         >
-          <TabsList className='flex flex-col h-[400px] justify-center w-full max-w-[380px] mx-auto lg:mx-0 gap-6'>
+          <TabsList className='flex flex-col h-max lg:h-[400px] justify-center w-full max-w-[380px] mx-auto lg:mx-0 gap-6'>
             <TabsTrigger defaultChecked value='experience'>Experience</TabsTrigger>
             <TabsTrigger value='education'>Education</TabsTrigger>
             <TabsTrigger value='skills'>Skills</TabsTrigger>
@@ -192,7 +180,7 @@ const AboutPage = () => {
                 <ul className='grid grid-cols-1 md:grid-cols-2 gap-[30px]'>
                   {
                     experience.map((item, index) => {
-                      return <li key={index} className='bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col items-center md:items-start gap-1'>
+                      return <li key={index} className='bg-[#232329] h-[184px] py-6 px-2 sm:px-10 rounded-xl flex flex-col items-center md:items-start gap-1'>
                         <span className='text-accent'>{item.duration}</span>
                         <h3 className='text-xl max-w-[260px] min-h-[60px] text-center md:text-left'>{item.position}</h3>
                         <div className='flex items-center gap-3'>
@@ -212,7 +200,7 @@ const AboutPage = () => {
                 <ul className='grid grid-cols-1 md:grid-cols-2 gap-[30px]'>
                   {
                     education.map((item, index) => {
-                      return <li key={index} className='bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col items-center md:items-start gap-1'>
+                      return <li key={index} className='bg-[#232329] h-[184px] py-6 sm:px-10 rounded-xl flex flex-col items-center md:items-start gap-1'>
                         <span className='text-accent'>{item.duration}</span>
                         <h3 className='text-xl max-w-[260px] min-h-[60px] text-center md:text-left'>{item.degree}</h3>
                         <div className='flex items-center gap-3'>
@@ -232,7 +220,7 @@ const AboutPage = () => {
                 <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 md:gap-[30px] gap-4'>
                   {
                     skills.map((item, index) => {
-                      return <li key={index} className=''>
+                      return <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
                             <TooltipTrigger className='w-full h-[150px] bg-[#232329] rounded-xl flex items-center justify-center group'>
@@ -259,9 +247,9 @@ const AboutPage = () => {
                 <ul className='grid grid-cols-1 lg:grid-cols-2 gap-y-6 max-w-[620px] mx-auto lg:mx-0'>
                   {
                     about.info.map((item, index) => {
-                      return <li key={index} className={`${index === about.info.length - 1 && ':col-span-2'} flex items-center justify-center lg:justify-start xs:gap-4 gap-2`}>
-                        <span className='text-white/60 xs:text-base text-sm'>{item.fieldName}</span>
-                        <span className='xs:text-base text-sm'>{item.fieldValue}</span>
+                      return <li key={index} className={`${index === about.info.length - 1 && 'lg:col-span-2'} flex items-center justify-center lg:justify-start xs:gap-4 gap-2`}>
+                        <span className='xs:text-base text-sm'>{item.fieldName}</span>
+                        <span className='text-white/60 xs:text-base text-sm'>{item.fieldValue}</span>
                       </li>
                     })
                   }

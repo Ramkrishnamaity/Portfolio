@@ -7,9 +7,9 @@ import { FiDownload } from "react-icons/fi"
 const Home: React.FC = () => {
 
   return (
-    <section className="w-full">
-      <div className="container mx-auto h-full">
-        <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
+    <section className="w-full h-max pb-2">
+      <div className="container mx-auto pb-8">
+        <div className="flex flex-col lg:flex-row items-center justify-between">
 
           {/* text part */}
           <div className="text-center lg:text-left order-2 lg:order-none">
@@ -20,7 +20,7 @@ const Home: React.FC = () => {
             </h1>
 
             <p className="max-w-[500px] mb-9 text-white/80">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti eveniet eaque id. Perspiciatis obcaecati totam quia blanditiis possimus atque numquam!
+            A Passionate Full stack developer || Programmer From India.
             </p>
 
             {/* Buttons */}
@@ -30,8 +30,16 @@ const Home: React.FC = () => {
                 variant="outline"
                 className="uppercase flex items-center gap-2"
               >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
+                <a
+                  href="/assets/home/resume.pdf"
+                  download="ramkrishna_resume.pdf"
+                  className="flex items-center gap-2"
+                >
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </a>
+                {/* <span>Download CV</span>
+                <FiDownload className="text-xl" /> */}
               </Button>
               <div className="mb-8 lg:mb-0">
                 <SocialLinks containerStyle="flex gap-6" iconStyle="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:trasition-all duration-500" />

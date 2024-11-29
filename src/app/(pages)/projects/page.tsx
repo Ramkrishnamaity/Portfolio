@@ -22,30 +22,30 @@ import WorkSliderBtns from '@/components/project/WorkSliderBtns'
 const projects = [
   {
     no: '01',
-    projectName: 'Project 1',
-    projectDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quae provident? Animi placeat veniam beatae.",
-    techs: ["ReactJs", "NextJs", "NodeJs"],
-    image: '/assets/project.png',
+    projectName: 'Chat Application',
+    projectDesc: "A Real Time Chat Application (Fully Responsive) with audio call, video call and status share facilities.",
+    techs: ["ReactJs", "NodeJs", "PeerJs", "Socket.io"],
+    image: '/assets/projects/chatapp.png',
     repoUrl: "/",
     liveUrl: "/"
   },
   {
     no: '02',
-    projectName: 'Project 1',
-    projectDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quae provident? Animi placeat veniam beatae.",
-    techs: ["ReactJs", "NextJs", "NodeJs"],
-    image: '/assets/project.png',
-    repoUrl: "/",
-    liveUrl: "/"
+    projectName: 'Portfolio Website',
+    projectDesc: "This is my Personal Portfolio (Fully Responsive) where you are currently exploring my work and achievements",
+    techs: ["NextJs", "Shadcn UI", "Tailwind CSS"],
+    image: '/assets/portfolio.png',
+    repoUrl: "https://github.com/Ramkrishnamaity/rhythmchat-app-server",
+    liveUrl: "https://github.com/Ramkrishnamaity/rhythmchat-app-server"
   },
   {
     no: '03',
-    projectName: 'Project 1',
-    projectDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, quae provident? Animi placeat veniam beatae.",
-    techs: ["ReactJs", "NextJs", "NodeJs"],
-    image: '/assets/project.png',
-    repoUrl: "/",
-    liveUrl: "/"
+    projectName: 'NPM Starter Package',
+    projectDesc: "This plugin provides ReactJs, NodeJs, NextJS project template in both JavaScript And TypeScript language that contain a very useful file structure with impotant configurations.",
+    techs: ["NodeJs", "NPM"],
+    image: '/assets/portfolio.png',
+    repoUrl: "https://github.com/Ramkrishnamaity/web-starter-kit",
+    liveUrl: "https://github.com/Ramkrishnamaity/web-starter-kit"
   }
 ]
 
@@ -61,7 +61,7 @@ const ProjectsPage = () => {
 
   return (
     <div className="container mx-auto">
-      <div className='flex flex-col lg:flex-row lg:gap-[30px]'>
+      <div className='flex flex-col lg:flex-row gap-[30px] py-5'>
         <div className='w-full lg:w-[50%] lg:h-[460px] flex flex-col lg:justify-between order-2 lg:order-none'>
           <div className='flex flex-col gap-[30px] h-[50%]'>
 
@@ -125,7 +125,7 @@ const ProjectsPage = () => {
           <Swiper
             spaceBetween={30}
             slidesPerView={1}
-            className='lg:h-[520px] mb-12'
+            className='lg:h-[520px]'
             onSlideChange={handleSlideChange}
           >
             {
