@@ -31,7 +31,7 @@ const projects = [
   },
   {
     no: "02",
-    projectName: "Portfolio Website",
+    projectName: "Portfolio",
     projectDesc: "This is my Personal Portfolio (fully responsive) where you are currently exploring my work and achievements",
     techs: ["NextJs", "Shadcn UI", "Tailwind CSS"],
     image: "/assets/projects/portfolio.png",
@@ -41,9 +41,9 @@ const projects = [
   {
     no: "03",
     projectName: "NPM Plugin",
-    projectDesc: "Npm package that provides ReactJs, NodeJs, NextJS project template in both JavaScript And TypeScript language that contain a very useful file structure with impotant configurations.",
+    projectDesc: "Npm package that provides ReactJs, NodeJs, NextJS project template in both JavaScript And TypeScript language that contains a very useful file structure with important configurations.",
     techs: ["NodeJs"],
-    image: "/assets/projects/portfolio.png",
+    image: "/assets/projects/plugin.png",
     repoUrl: "https://github.com/Ramkrishnamaity/web-starter-kit/",
     liveUrl: "https://www.npmjs.com/package/web-plugin-kit/"
   }
