@@ -34,7 +34,7 @@ const projects = [
     projectName: "Portfolio Website",
     projectDesc: "This is my Personal Portfolio (Fully Responsive) where you are currently exploring my work and achievements",
     techs: ["NextJs", "Shadcn UI", "Tailwind CSS"],
-    image: "/assets/portfolio.png",
+    image: "/assets/projects/portfolio.png",
     repoUrl: "https://github.com/Ramkrishnamaity/rhythmchat-app-server",
     liveUrl: "https://github.com/Ramkrishnamaity/rhythmchat-app-server"
   },
@@ -43,7 +43,7 @@ const projects = [
     projectName: "NPM Starter Package",
     projectDesc: "This plugin provides ReactJs, NodeJs, NextJS project template in both JavaScript And TypeScript language that contain a very useful file structure with impotant configurations.",
     techs: ["NodeJs", "NPM"],
-    image: "/assets/portfolio.png",
+    image: "/assets/projects/portfolio.png",
     repoUrl: "https://github.com/Ramkrishnamaity/web-starter-kit",
     liveUrl: "https://github.com/Ramkrishnamaity/web-starter-kit"
   }
