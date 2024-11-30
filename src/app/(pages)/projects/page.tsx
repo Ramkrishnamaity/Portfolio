@@ -22,30 +22,30 @@ import WorkSliderBtns from "@/components/project/WorkSliderBtns";
 const projects = [
   {
     no: "01",
-    projectName: "Chat Application",
-    projectDesc: "A Real Time Chat Application (Fully Responsive) with audio call, video call and status share facilities.",
+    projectName: "RhythmChat",
+    projectDesc: "A Real Time Chat Application (fully responsive) with audio call, video call and status share facilities.",
     techs: ["ReactJs", "NodeJs", "PeerJs", "Socket.io"],
     image: "/assets/projects/chatapp.png",
-    repoUrl: "/",
-    liveUrl: "/"
+    repoUrl: "https://github.com/Ramkrishnamaity/rhythmchat-app-server/",
+    liveUrl: "https://chat.ramkrishna.site/"
   },
   {
     no: "02",
     projectName: "Portfolio Website",
-    projectDesc: "This is my Personal Portfolio (Fully Responsive) where you are currently exploring my work and achievements",
+    projectDesc: "This is my Personal Portfolio (fully responsive) where you are currently exploring my work and achievements",
     techs: ["NextJs", "Shadcn UI", "Tailwind CSS"],
     image: "/assets/projects/portfolio.png",
-    repoUrl: "https://github.com/Ramkrishnamaity/rhythmchat-app-server",
-    liveUrl: "https://github.com/Ramkrishnamaity/rhythmchat-app-server"
+    repoUrl: "https://github.com/Ramkrishnamaity/Portfolio/",
+    liveUrl: "https://portfolio.ramkrishna.site/"
   },
   {
     no: "03",
-    projectName: "NPM Starter Package",
-    projectDesc: "This plugin provides ReactJs, NodeJs, NextJS project template in both JavaScript And TypeScript language that contain a very useful file structure with impotant configurations.",
-    techs: ["NodeJs", "NPM"],
+    projectName: "NPM Plugin",
+    projectDesc: "Npm package that provides ReactJs, NodeJs, NextJS project template in both JavaScript And TypeScript language that contain a very useful file structure with impotant configurations.",
+    techs: ["NodeJs"],
     image: "/assets/projects/portfolio.png",
-    repoUrl: "https://github.com/Ramkrishnamaity/web-starter-kit",
-    liveUrl: "https://github.com/Ramkrishnamaity/web-starter-kit"
+    repoUrl: "https://github.com/Ramkrishnamaity/web-starter-kit/",
+    liveUrl: "https://www.npmjs.com/package/web-plugin-kit/"
   }
 ];
 

@@ -68,14 +68,9 @@ const experience = [
     duration: "Janury 2024 - Present"
   },
   {
-    company: "Tech Solutions Inc.",
+    company: "Freelancing",
     position: "Full Stack Developer",
-    duration: "2022 - Present"
-  },
-  {
-    company: "Tech Solutions Inc.",
-    position: "Full Stack Developer",
-    duration: "2022 - Present"
+    duration: "2023 - Present"
   }
 ];
 
