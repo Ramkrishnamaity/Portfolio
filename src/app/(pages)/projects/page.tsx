@@ -22,30 +22,21 @@ import WorkSliderBtns from "@/components/project/WorkSliderBtns";
 const projects = [
   {
     no: "01",
-    projectName: "RhythmChat",
-    projectDesc: "A Real Time Chat Application (fully responsive) with audio call, video call and status share facilities.",
-    techs: ["ReactJs", "NodeJs", "PeerJs", "Socket.io"],
-    image: "/assets/projects/chatapp.png",
-    repoUrl: "https://github.com/Ramkrishnamaity/rhythmchat-app-server/",
-    liveUrl: "https://chat.ramkrishna.site/"
+    projectName: "AI-Powered Personal Finance Assistant",
+    projectDesc: "An AI-assisted personal finance application with expense and income tracking and an analytics dashboard. Implemented an AI chatbot to answer natural language queries using user financial data.",
+    techs: ["ReactJs", "NodeJs", "MongoDb", "Google Gemini API"],
+    image: "/assets/projects/finance_project.png",
+    repoUrl: "http://github.com/Ramkrishnamaity/finance-assistant",
+    liveUrl: "http://github.com/Ramkrishnamaity/finance-assistant"
   },
   {
     no: "02",
-    projectName: "Portfolio",
-    projectDesc: "This is my Personal Portfolio (fully responsive) where you are currently exploring my work and achievements",
-    techs: ["NextJs", "Shadcn UI", "Tailwind CSS"],
-    image: "/assets/projects/portfolio.png",
-    repoUrl: "https://github.com/Ramkrishnamaity/Portfolio/",
-    liveUrl: "https://portfolio.ramkrishna.site/"
-  },
-  {
-    no: "03",
-    projectName: "NPM Plugin",
-    projectDesc: "Npm package that provides ReactJs, NodeJs, NextJS project template in both JavaScript And TypeScript language that contains a very useful file structure with important configurations.",
+    projectName: "NPM Project Boilerplate Generator",
+    projectDesc: "NPM package named (web-starter-kit) providing React.js, Node.js project templates in both JavaScript and TypeScript, with a well-structured file architecture and essential configurations.",
     techs: ["NodeJs"],
-    image: "/assets/projects/plugin.png",
+    image: "/assets/projects/npm_project.png",
     repoUrl: "https://github.com/Ramkrishnamaity/web-starter-kit/",
-    liveUrl: "https://www.npmjs.com/package/web-plugin-kit/"
+    liveUrl: "http://npmjs.com/package/@_ramkrishna11/web-starter-kit"
   }
 ];
 

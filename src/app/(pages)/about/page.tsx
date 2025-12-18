@@ -17,18 +17,18 @@ import {
 } from "react-icons/bs";
 
 import {
-  SiTailwindcss, 
-  SiNextdotjs, 
-  SiPostman, 
-  SiPostgresql, 
-  SiMongodb, 
+  SiTailwindcss,
+  SiNextdotjs,
+  SiPostman,
+  SiPostgresql,
+  SiMongodb,
   SiTypescript,
   SiExpress
 } from "react-icons/si";
 
 const about = {
   title: "About me",
-  desc: "A Passionate Full stack developer skilled in ReactJs, NodeJs, NextJs, Non Relational and Relational Databases. Apart from Web Technologies, i am doing programming in different languages like C, Java, Python etc",
+  desc: "A passionate Full Stack Developer with hands-on experience in building scalable web applications using React.js, Node.js, and Next.js. Proficient in working with both relational and non-relational databases. In addition to web technologies, experienced in programming with languages such as C, Java, and Python, with a strong focus on writing clean, efficient, and maintainable code.",
   info: [
     {
       fieldName: "Name",
@@ -63,14 +63,14 @@ const about = {
 
 const experience = [
   {
-    company: "Webhibe Technologies.",
-    position: "Jr MERN Stack Developer",
-    duration: "Janury 2024 - Present"
+    company: "Indus Net Technologies",
+    position: "Associate Software Engineer",
+    duration: "Dec 2024 - Present"
   },
   {
-    company: "Freelancing",
-    position: "Full Stack Developer",
-    duration: "2023 - Present"
+    company: "Webhibe Technologies",
+    position: "Jr MERN Stack Developer",
+    duration: "Jan 2024 - Dec 2024"
   }
 ];
 
