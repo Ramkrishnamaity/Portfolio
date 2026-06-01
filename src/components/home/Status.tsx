@@ -5,18 +5,19 @@ import CountUp from "react-countup";
 const stats = [
     {
         value: 2,
+        suffix: ".5+",
         text: "Years of experience"
     },
     {
-        value: 15,
+        value: 22,
         text: "Projects completed"
     },
     {
-        value: 6,
+        value: 8,
         text: "Technologies mastered"
     },
     {
-        value: 921,
+        value: 957,
         text: "Code commits"
     }
 ];
@@ -37,7 +38,8 @@ const Status = () => {
                                         end={item.value}
                                         duration={5}
                                         delay={0}
-                                        className="text-4xl lg:text-6xl font-extrabold"
+                                        suffix={"suffix" in item ? item.suffix : ""}
+                                        className="text-3xl lg:text-5xl font-extrabold"
                                     />
                                     <p className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-white/80`}
                                     >

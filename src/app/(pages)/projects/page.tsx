@@ -22,21 +22,21 @@ import WorkSliderBtns from "@/components/project/WorkSliderBtns";
 const projects = [
   {
     no: "01",
-    projectName: "AI-Powered Personal Finance Assistant",
-    projectDesc: "An AI-assisted personal finance application with expense and income tracking and an analytics dashboard. Implemented an AI chatbot to answer natural language queries using user financial data.",
-    techs: ["ReactJs", "NodeJs", "MongoDb", "Google Gemini API"],
-    image: "/assets/projects/finance_project.png",
-    repoUrl: "http://github.com/Ramkrishnamaity/finance-assistant",
-    liveUrl: "http://github.com/Ramkrishnamaity/finance-assistant"
+    projectName: "PrepWise AI",
+    projectDesc: "AI-Powered Resume-Based Interview Platform. Built resume-processing workflows with RAG and Gemini LLM to generate contextual interview questions. Delivered real-time audio/video interviews using WebRTC and Socket.IO for low-latency communication.",
+    techs: ["Next.js", "Node.js", "TypeScript", "MongoDB", "Gemini API", "WebRTC", "Socket.IO", "RAG"],
+    image: "/assets/projects/p1.png",
+    repoUrl: "https://github.com/Ramkrishnamaity/prepwise-ai",
+    liveUrl: "https://github.com/Ramkrishnamaity/prepwise-ai"
   },
   {
     no: "02",
-    projectName: "NPM Project Boilerplate Generator",
-    projectDesc: "NPM package named (web-starter-kit) providing React.js, Node.js project templates in both JavaScript and TypeScript, with a well-structured file architecture and essential configurations.",
-    techs: ["NodeJs"],
-    image: "/assets/projects/npm_project.png",
-    repoUrl: "https://github.com/Ramkrishnamaity/web-starter-kit/",
-    liveUrl: "http://npmjs.com/package/@_ramkrishna11/web-starter-kit"
+    projectName: "DevStack CLI",
+    projectDesc: "Full Stack Project Scaffolding CLI. Published an npm package @_ramkrishna11/devstack-cli supporting 6 template variants to scaffold React, Node.js, and Next.js projects in JavaScript and TypeScript with production-ready configurations, eliminating repetitive setup overhead.",
+    techs: ["Node.js", "NPM"],
+    image: "/assets/projects/p2.png",
+    repoUrl: "https://github.com/Ramkrishnamaity/devstack-cli",
+    liveUrl: "https://www.npmjs.com/package/@_ramkrishna11/devstack-cli"
   }
 ];
 
@@ -83,7 +83,7 @@ const ProjectsPage = () => {
 
             {/* links */}
             <div className='flex items-center gap-4'>
-              <Link href={project.liveUrl}>
+              <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
                     <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
@@ -95,7 +95,7 @@ const ProjectsPage = () => {
                   </Tooltip>
                 </TooltipProvider>
               </Link>
-              <Link href={project.repoUrl}>
+              <Link href={project.repoUrl} target="_blank" rel="noopener noreferrer">
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
                     <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>

@@ -8,8 +8,8 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaJava,
-  FaNodeJs
+  FaNodeJs,
+  FaAws
 } from "react-icons/fa";
 
 import {
@@ -23,12 +23,17 @@ import {
   SiPostgresql,
   SiMongodb,
   SiTypescript,
-  SiExpress
+  SiExpress,
+  SiRedis,
+  SiDocker,
+  SiFirebase,
+  SiMicrosoftazure,
+  SiOpenai
 } from "react-icons/si";
 
 const about = {
   title: "About me",
-  desc: "A passionate Full Stack Developer with hands-on experience in building scalable web applications using React.js, Node.js, and Next.js. Proficient in working with both relational and non-relational databases. In addition to web technologies, experienced in programming with languages such as C, Java, and Python, with a strong focus on writing clean, efficient, and maintainable code.",
+  desc: "Full Stack Developer with 2.5+ years of experience building scalable backend and frontend systems using NodeJS, ReactJS, and NextJS. Worked across pharma and insurance enterprise domains. Recognized with the Rising Star Award for contributions in software development at INT. Passionate about clean architecture and the deep JavaScript ecosystem.",
   info: [
     {
       fieldName: "Name",
@@ -44,7 +49,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "2+ Years",
+      fieldValue: "2.5+ Years",
     },
     {
       fieldName: "Nationality",
@@ -56,7 +61,7 @@ const about = {
     },
     {
       fieldName: "Address",
-      fieldValue: "Saltlake, Kolkata, West Bengal, India",
+      fieldValue: "Sector 5, Kolkata, West Bengal, India",
     }
   ]
 };
@@ -126,10 +131,6 @@ const skills = [
     name: "TypeScript"
   },
   {
-    icon: <FaJava />,
-    name: "Java"
-  },
-  {
     icon: <FaHtml5 />,
     name: "Html 5"
   },
@@ -148,6 +149,30 @@ const skills = [
   {
     icon: <SiPostman />,
     name: "Postman"
+  },
+  {
+    icon: <SiRedis />,
+    name: "Redis"
+  },
+  {
+    icon: <SiDocker />,
+    name: "Docker"
+  },
+  {
+    icon: <FaAws />,
+    name: "AWS"
+  },
+  {
+    icon: <SiFirebase />,
+    name: "Firebase"
+  },
+  {
+    icon: <SiMicrosoftazure />,
+    name: "Azure"
+  },
+  {
+    icon: <SiOpenai />,
+    name: "OpenAI"
   }
 ];
 

@@ -28,7 +28,7 @@ const SocialLinks: React.FC<PropsType> = ({containerStyle, iconStyle}) => {
         <div className={containerStyle}>
             {
                 social_links.map((item, index) => {
-                    return <Link href={item.url} key={index} className={iconStyle} passHref>
+                    return <Link href={item.url} key={index} className={iconStyle} target="_blank" rel="noopener noreferrer" passHref>
                         {item.icon}
                     </Link>;
                 })
