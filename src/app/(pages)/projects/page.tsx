@@ -22,6 +22,15 @@ import WorkSliderBtns from "@/components/project/WorkSliderBtns";
 const projects = [
   {
     no: "01",
+    projectName: "TrackMyRupee",
+    projectDesc: "Personal Finance Tracker for income and expenses in ₹. Supports categories, monthly budgets, transactions, and a dashboard with charts. Built Google OAuth login with JWT in httpOnly cookies, and an Express REST API on PostgreSQL with Drizzle ORM, served together with the Next.js frontend from a single server.",
+    techs: ["Next.js", "Express", "TypeScript", "PostgreSQL", "Drizzle ORM", "Tailwind CSS", "Google OAuth"],
+    image: "/assets/projects/p3.png",
+    repoUrl: "https://github.com/Ramkrishnamaity/track_my_rupee",
+    liveUrl: "https://track-my-rupee.onrender.com/"
+  },
+  {
+    no: "02",
     projectName: "PrepWise AI",
     projectDesc: "AI-Powered Resume-Based Interview Platform. Built resume-processing workflows with RAG and Gemini LLM to generate contextual interview questions. Delivered real-time audio/video interviews using WebRTC and Socket.IO for low-latency communication.",
     techs: ["Next.js", "Node.js", "TypeScript", "MongoDB", "Gemini API", "WebRTC", "Socket.IO", "RAG"],
@@ -30,7 +39,7 @@ const projects = [
     liveUrl: "https://github.com/Ramkrishnamaity/prepwise-ai"
   },
   {
-    no: "02",
+    no: "03",
     projectName: "DevStack CLI",
     projectDesc: "Full Stack Project Scaffolding CLI. Published an npm package @_ramkrishna11/devstack-cli supporting 6 template variants to scaffold React, Node.js, and Next.js projects in JavaScript and TypeScript with production-ready configurations, eliminating repetitive setup overhead.",
     techs: ["Node.js", "NPM"],
