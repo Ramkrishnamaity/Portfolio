@@ -33,7 +33,7 @@ import {
 
 const about = {
   title: "About me",
-  desc: "Full Stack Developer with 2.5+ years of experience building scalable backend and frontend systems using NodeJS, ReactJS, and NextJS. Worked across pharma and insurance enterprise domains. Recognized with the Rising Star Award for contributions in software development at INT. Passionate about clean architecture and the deep JavaScript ecosystem.",
+  desc: "Full Stack Developer with 3 years of experience building scalable backend and frontend systems using NodeJS, ReactJS, and NextJS. Worked across pharma and insurance enterprise domains. Recognized with the Rising Star Award for contributions in software development at INT. Passionate about clean architecture and the deep JavaScript ecosystem.",
   info: [
     {
       fieldName: "Name",
@@ -49,7 +49,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "2.5+ Years",
+      fieldValue: "3 Years",
     },
     {
       fieldName: "Nationality",
@@ -73,9 +73,9 @@ const experience = [
     duration: "Dec 2024 - Present"
   },
   {
-    company: "Webhibe Technologies",
-    position: "Jr MERN Stack Developer",
-    duration: "Jan 2024 - Dec 2024"
+    company: "Sevysis",
+    position: "Associate Software Engineer",
+    duration: "Oct 2023 - Dec 2024"
   }
 ];
 
