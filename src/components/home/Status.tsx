@@ -2,7 +2,7 @@
 
 import CountUp from "react-countup";
 
-const stats = [
+const stats: { value: number; suffix?: string; text: string }[] = [
     {
         value: 3,
         text: "Years of experience"
@@ -37,7 +37,7 @@ const Status = () => {
                                         end={item.value}
                                         duration={5}
                                         delay={0}
-                                        suffix={"suffix" in item ? item.suffix : ""}
+                                        suffix={item.suffix ?? ""}
                                         className="text-3xl lg:text-5xl font-extrabold"
                                     />
                                     <p className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-white/80`}
