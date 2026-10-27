@@ -33,8 +33,8 @@ const Home: React.FC = () => {
                 className="uppercase flex items-center gap-2"
               >
                 <a
-                  href="/assets/home/resume_2026.pdf"
-                  download="ramkrishna_resume_2026.pdf"
+                  href="/assets/home/Ramkrishna_Maity_Resume.pdf"
+                  download="Ramkrishna_Maity_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
